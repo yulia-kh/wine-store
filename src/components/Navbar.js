@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWineGlassAlt, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import { ButtonContainer } from './Button';
+import { ProductConsumer } from '../context';
 
 export default class Navbar extends Component {
     render() {
@@ -22,7 +23,11 @@ export default class Navbar extends Component {
                 <Link to='/cart' className='ml-auto'>
                     <ButtonContainer>
                         <FontAwesomeIcon icon={faShoppingCart} />
-                        <span className="ml-2">my cart</span>
+                        <span className='ml-2'>my cart</span>
+                        <span className='ml-2'>
+                            {/* code to display current total in cart */}
+                        </span>
+
                     </ButtonContainer>
                 </Link>
             </NavWrapper>

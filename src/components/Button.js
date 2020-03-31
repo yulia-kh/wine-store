@@ -11,7 +11,7 @@ padding: 0.2rem 0.6rem;
 cursor: pointer;
 transition: all 0.5s ease-in-out;
 &:hover {
-    background: val(--lightBlue);
+    background: var(--lightBlue);
     color: var(--mainBlue);
 }
 &:focus {

@@ -86,7 +86,7 @@ export const storeProducts = [
     {
       id: 8,
       title: "Wine stopper",
-      img: "img/wine-stopper",
+      img: "img/wine-stopper.jpg",
       price: 2,
       company: "Xwine",
       info:
