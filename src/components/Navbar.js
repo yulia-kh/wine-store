@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWineGlassAlt, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import { ButtonContainer } from './Button';
-import { ProductConsumer } from '../context';
 
 export default class Navbar extends Component {
     render() {
