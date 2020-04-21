@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { ProductConsumer } from '../context';
 import { ButtonContainer } from './Button';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export default class Modal extends Component {
   render() {
@@ -24,7 +26,7 @@ export default class Modal extends Component {
                       className='col-8 mx-auto col-md-6 col-lg-4
                       text-center text-capitalize p-5'
                     >
-                      <h5>Item added to the cart</h5>
+                      <h5 id='confirmation'><FontAwesomeIcon icon={faCheck} color='red'/><span class='confirmation'>Item added to the cart!</span></h5>
                       <img src={img} className='img-fluid' alt='product'/>
                       <h5>{title}</h5>
                       <h5 className='text-muted'>price: $ {price}</h5>
@@ -62,5 +64,12 @@ align-items: center;
 justify-content: center;
 #modal {
   background: var(--mainWhite);
+}
+#confirmation {
+  color: red;
+  font-size: 1.5rem;
+}
+.confirmation {
+  margin-left: 10px;
 }
 `;
